@@ -38,7 +38,3 @@ Atividade_3/
 ## 📌 Contato
 Caso tenha dúvidas ou sugestões, entre em contato!
 
----
-
-📢 **Observação**: Certifique-se de que o arquivo `atividade_3.js` está no mesmo diretório do `index.html` para que o jogo funcione corretamente.
-
