@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f5ff;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2a4d9e;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a6fc0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a4d9e;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6eeff;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tech-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tech-list {
+    margin-top: 20px;
+}
+
+.tech-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e6eeff;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.path-history {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+}

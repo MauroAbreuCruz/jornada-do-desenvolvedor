@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade_3</title>
+    <header>Atividade_3</header>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jornada do Desenvolvedor</h1>
+
+        <!-- Etapa 1: Escolha Front-End ou Back-End -->
+        <div id="step1">
+            <div class="question">1. Qual área você deseja seguir?</div>
+            <div class="options">
+                <button onclick="choosePath('frontend')">Front-End</button>
+                <button onclick="choosePath('backend')">Back-End</button>
+            </div>
+        </div>
+
+        <!-- Etapa 2: Escolha da tecnologia específica -->
+        <div id="step2-frontend" class="hidden">
+            <div class="question">2. Qual framework você deseja aprender?</div>
+            <div class="options">
+                <button onclick="chooseTechnology('react')">React</button>
+                <button onclick="chooseTechnology('vue')">Vue</button>
+            </div>
+        </div>
+
+        <div id="step2-backend" class="hidden">
+            <div class="question">2. Qual linguagem você deseja aprender?</div>
+            <div class="options">
+                <button onclick="chooseTechnology('csharp')">C#</button>
+                <button onclick="chooseTechnology('java')">Java</button>
+            </div>
+        </div>
+
+        <!-- Etapa 3: Especialização ou Fullstack -->
+        <div id="step3" class="hidden">
+            <div class="question">3. Qual caminho você deseja seguir agora?</div>
+            <div class="options">
+                <button onclick="chooseCareerPath('specialist')">Especializar na área escolhida</button>
+                <button onclick="chooseCareerPath('fullstack')">Desenvolver-se como Fullstack</button>
+            </div>
+        </div>
+
+        <!-- Etapa 4: Tecnologias para aprender -->
+        <div id="step4" class="hidden">
+            <div class="question">4. Quais tecnologias você gostaria de aprender?</div>
+            <div class="tech-input">
+                <input type="text" id="techInput" placeholder="Digite uma tecnologia...">
+                <button onclick="addTechnology()">Adicionar</button>
+            </div>
+            <div id="techList" class="tech-list"></div>
+            <div class="tech-input" style="margin-top: 20px;">
+                <div class="question">Tem mais alguma tecnologia que você gostaria de aprender?</div>
+                <div class="options">
+                    <button onclick="continueTechInput()">Sim</button>
+                    <button onclick="finishGame()">Não, finalizar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resultado final -->
+        <div id="finalResult" class="hidden">
+            <div class="result" id="resultText"></div>
+            <div class="path-history" id="pathHistory"></div>
+            <button onclick="restartGame()" style="margin-top: 20px;">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="atividade_3.js"></script>
+</body>
+
+</html>
